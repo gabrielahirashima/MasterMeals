@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Menu Mastermeals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+	<div class="Menu">
+		<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="/menu">
+					 	<img src="logo.png" width="160" height="60" style="margin-right: 20px; margin-left: 20px;" alt="">
+				  </a>
+			    </div>
+			    
+			    
+			    <ul class="nav navbar-nav">
+			      <li><a href="/buscarReceita">ENCONTRAR RECEITA</a></li>
+			      <li><a href="#">RECEITAS RAPIDAS</a></li>
+			      <li><a href="#">FILTRAR RECEITAS</a></li>
+			      <li><a href="#">RECEITA SURPRESA</a></li>
+			    </ul>
+			    
+			    
+			   <ul class="nav navbar-custom navbar-right">
+			      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Bem-vindo,
+				<b>[[${#request.userPrincipal.principal.fullName}]]</b></a></li>
+			      <li><a href="#" style="text-align:end"><span class="glyphicon glyphicon-log-in"></span>Sair</a></li>
+			    </ul>
+			    
+			      <ul class="nav navbar-custom navbar-right">
+			      <li><a href="#"><span class="	glyphicon glyphicon-question-sign"></span> Precisa de ajuda?</a></li>
+			    </ul>
+			  </div>
+			</nav>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="col-12 col-md-12 col-xl-12">
+		
+		<div class="row" style="background-color:#EC5627; min-width: 100%;">
+			<div class="col-md-2">
+				<h1 class="MostViewed">MAIS VISTOS</h1>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="col text-center">
+					<img src="Images/salada_caesae.jpeg" style="width:80%; height:80%; border-radius:10%; margin-top:5%;">
+				</div>
+			</div>
+			
+			<div class="col-md-6">
+				<div class="row" style="height:50%; margin-top:40px;">
+					<h1 class="Title">SALADA CAESAR</h1>
+				</div>
+				<div class="row" style="height:50%; margin-top:20px;">
+					<h3>Custo Aproximado: R$ 20</h3>
+					<h3>Tempo de Preparo: 20 min</h3>
+					<h3>Rendimento: 4 porções</h3>
+				</div>
+			</div>
+		
+		</div>
+		
+		<div class="row" style="min-width: 100%; height:100px; margin-top:80px;">
+			<h1 style="font-weight:bold;">MAIS DESTAQUES</h1>
+		</div>
+		
+		
+		<div class="row" style="background-color:#EC5627; min-width: 100%; padding:1%;">
+			<div class="col-md-2">
+				<img src="Images/salada_caesae.jpeg" style="width:80%; height:80%; border-radius:10%; margin-top:5%;">
+			</div>
+			<div class="col-md-2">
+				<h3>Salada</h3>
+			</div>
+			<div class="col-md-4">
+			
+			</div>
+			<div class="col-md-4">
+			
+			</div>
+		</div>
+		
+	    </div>   
+	</div>
+	
+</body>
+
+<style>
+	html {
+	  height: 100%;
+	  width: 100%;
+	}
+	
+	body{
+	background-color:#FFB800;
+	display: table;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	}
+
+	.navbar {
+    background-color: #FFB800;
+    border-color:#FFB800;
+    }
+
+	.navbar-nav {
+    background-color: #FFB800;
+    }
+     
+     
+   ul.navbar-nav{
+   	padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    }
+     
+    ul.navbar-nav li a{
+    margin-top: 20px;
+    margin-right: 40px;
+	width:100%;
+	border-radius:50px;
+	text-align: center;
+	font-weight:bold;
+	}
+	
+	.navbar-inverse .navbar-nav li a{
+	color: black;
+	}
+	  	
+  	 ul.navbar-custom li a{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 125%;
+	color: black; 
+	}
+	
+	h3.bold{
+		font-weight: bold;
+	}
+	
+	h1.MostViewed{
+		font-weight:bold;
+		font-size:200%;
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+		margin-left:30px;
+	}
+	
+	h1.Title{
+		font-weight:bold;
+		color: white;
+	}
+    
+    
+     
+</style>
+</html>
