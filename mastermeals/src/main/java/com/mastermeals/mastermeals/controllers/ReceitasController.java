@@ -25,6 +25,12 @@ public class ReceitasController {
 	@Autowired
 	ReceitaRepository unicaReceita;
 	
+	@RequestMapping(value="/menu", method=RequestMethod.GET)
+	public String menu(Model model) {
+		return("eventos/menu");
+	}
+	
+	
 	@RequestMapping(value="/buscarReceita", method=RequestMethod.GET)
 	public String form(Model model) {
 		List<Receita> receitas = new ArrayList<Receita>();
@@ -34,7 +40,6 @@ public class ReceitasController {
 	
 	@RequestMapping(value="/buscarReceita", method=RequestMethod.POST)
 	public ModelAndView buscarReceita(@RequestParam(value="nome", required=false, defaultValue="") String nome) {
-		//Receita receita = rr.findByIdReceita(nome);
 		ModelAndView mv = new ModelAndView("eventos/encontrarReceita");
 		List<Receita> receitas = new ArrayList<Receita>();
 		receitas = rr.findByNome(nome);
