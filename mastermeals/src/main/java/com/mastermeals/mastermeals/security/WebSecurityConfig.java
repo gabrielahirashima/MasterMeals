@@ -1,4 +1,4 @@
-package com.mastermeals.mastermeals.security;
+   package com.mastermeals.mastermeals.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -50,6 +50,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		.antMatchers(HttpMethod.GET, "/").permitAll()
 		.antMatchers(HttpMethod.GET, "/cadastrarUsuario").permitAll()
 		.antMatchers(HttpMethod.POST, "/cadastrarUsuario").permitAll()
+		.antMatchers(HttpMethod.GET, "/menu").hasRole("USER")
 		.antMatchers(HttpMethod.GET, "/buscarReceita").hasRole("USER")
 		.anyRequest().authenticated()
 		.and().formLogin().permitAll()
