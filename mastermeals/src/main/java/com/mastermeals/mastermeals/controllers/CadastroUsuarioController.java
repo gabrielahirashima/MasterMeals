@@ -36,13 +36,12 @@ public class CadastroUsuarioController {
 		}
 		service.registerDefaultUser(usuario);
 		redirectAttributes.addFlashAttribute("mensagem", "Cadastro realizado com sucesso!");
-		return "redirect:/buscarReceita";
+		return "redirect:/menu";
 	}
 	
-	
-	@RequestMapping(value="/buscarReceita")
+	@RequestMapping(value="/menu")
 	public String inicio() {
-		return ("eventos/encontrarReceita");
+		return ("eventos/menu");
 	}
 
 }
