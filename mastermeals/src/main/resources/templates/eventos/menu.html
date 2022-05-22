@@ -45,26 +45,52 @@
 	<div class="container-fluid">
 		<div class="col-12 col-md-12 col-xl-12">
 		
-		<div class="row" style="background-color:#EC5627; min-width: 100%;">
-			<div class="col-md-2">
-				<h1 class="MostViewed">MAIS VISTOS</h1>
+		<div class="row" style="background-color:#EC5627; min-width: 100%; padding:1%;">
+		
+			<div class="col-md-3">
+				<h1 class="Title">ENCONTRAR RECEITA</h1>
+					<div class="description">
+						<p style="font-weight:bold;">Quer procurar por uma receita especifica?</p>
+						<ul>
+						  <li>Clique em "Encontrar receita"</li>
+						  <li>Digite o nome da receita</li>
+						  <li>Selecione a receita</li>
+						</ul> 
+					</div>
 			</div>
-			
-			<div class="col-md-4">
-				<div class="col text-center">
-					<img src="Images/salada_caesae.jpeg" style="width:80%; height:80%; border-radius:10%; margin-top:5%;">
+			<div class="col-md-3">
+				<h1 class="Title">RECEITAS RAPIDAS</h1>
+				<div class="description">
+					<p style="font-weight:bold;">Quer procurar por uma receita rapida?</p>
+						<ul>
+						  <li>Clique em "Receitas Rapidas"</li>
+						  <li>Filtre o tempo</li>
+						  <li>Selecione uma das receitas</li>
+						</ul> 
 				</div>
 			</div>
-			
-			<div class="col-md-6">
-				<div class="row" style="height:50%; margin-top:40px;">
-					<h1 class="Title">SALADA CAESAR</h1>
+			<div class="col-md-3">
+				<h1 class="Title">FILTRAR RECEITA</h1>
+				<div class="description">
+					<p style="font-weight:bold;">Quer procurar por receitas utilizando ingredientes especificos?</p>
+						<ul>
+						  <li>Clique em "Filtrar receitas"</li>
+						  <li>Selecione os filtros que deseja adicionar ou retirar da receita</li>
+						  <li>Selecione uma das receitas</li>
+						</ul> 
 				</div>
-				<div class="row" style="height:50%; margin-top:20px;">
-					<h3>Custo Aproximado: R$ 20</h3>
-					<h3>Tempo de Preparo: 20 min</h3>
-					<h3>Rendimento: 4 porções</h3>
+			</div>
+			<div class="col-md-3">
+				<h1 class="Title">RECEITA SURPRESA</h1>
+				<div class="description">
+					<p style="font-weight:bold;">Quer procurar por receitas diferentes?</p>
+						<ul>
+						  <li>Clique em "Receita Surpresa"</li>
+						  <li>Clique nos dados</li>
+						  <li>Selecione uma das receitas</li>
+						</ul> 
 				</div>
+
 			</div>
 		
 		</div>
@@ -153,14 +179,20 @@
 	h1.MostViewed{
 		font-weight:bold;
 		font-size:200%;
-		writing-mode: vertical-rl;
-		text-orientation: upright;
 		margin-left:30px;
 	}
 	
 	h1.Title{
 		font-weight:bold;
 		color: white;
+		text-align:center;
+	}
+	
+	.description{
+		background-color:rgba(255,255,255,0.7);
+		border-radius:10px;
+		padding:10%;
+		width:100%;
 	}
     
     
